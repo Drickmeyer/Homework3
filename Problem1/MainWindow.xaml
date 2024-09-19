@@ -1,0 +1,21 @@
+﻿<Window x:Class="Problem1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Problem1"
+        mc:Ignorable="d"
+        Title="TV Show Information" Height="450" Width="800">
+    <Grid Background="#FF1040E4">
+        <ListBox x:Name="lstShows" Margin="0,146,0,0" Background="#33FFFFFF" Foreground="#FFE6E61E" SelectionChanged="lstShows_SelectionChanged"/>
+        <ComboBox x:Name="cboRating" HorizontalAlignment="Left" Margin="109,70,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboRating_SelectionChanged"/>
+        <Label HorizontalContentAlignment="Center" Content="TV Show Data" Margin="205,10,0,0" VerticalAlignment="Top" Height="60" HorizontalAlignment="Left" FontSize="36" Width="418" FontFamily="Algerian" Foreground="#FFF30909"/>
+        <Label Content="Rating" HorizontalAlignment="Left" Margin="38,70,0,0" VerticalAlignment="Top" Foreground="#FFF3ECEC" FontFamily="Castellar"/>
+        <ComboBox x:Name="cboCountry" HorizontalAlignment="Left" Margin="362,70,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboCountry_SelectionChanged"/>
+        <Label Content="Country" HorizontalAlignment="Left" Margin="277,70,0,0" VerticalAlignment="Top" Foreground="#FFF3ECEC" FontFamily="Castellar"/>
+        <ComboBox x:Name="cboLanguage" HorizontalAlignment="Left" Margin="607,69,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboLanguage_SelectionChanged"/>
+        <Label Content="Language" HorizontalAlignment="Left" Margin="514,69,0,0" VerticalAlignment="Top" Foreground="#FFF3ECEC" FontFamily="Castellar"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="316,110,0,0" VerticalAlignment="Top" Height="25" Width="84" Click="btnReset_Click"/>
+
+    </Grid>
+</Window>
